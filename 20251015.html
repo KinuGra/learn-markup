@@ -1,36 +1,51 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <!-- ビューポートの幅を端末の画面幅に合わせる -->
-    <meta name="viewport" content="width=device-width" />
-    <title>learn-markup</title>
-  </head>
 
-  <body>
-    <!-- alt属性はスクリーンリーダーで読み上げられたり、表示に失敗した際に表示される -->
-    <img src="./body.png" alt="テスト画像" />
+<head>
+  <meta charset="utf-8" />
+  <!-- ビューポートの幅を端末の画面幅に合わせる -->
+  <meta name="viewport" content="width=device-width" />
+  <title>learn-markup</title>
+</head>
 
-    <a href="https://google.com">ここをクリック</a>
-    <a href="./anker.html">anker.html</a>
+<body>
+  <!-- alt属性はスクリーンリーダーで読み上げられたり、表示に失敗した際に表示される -->
+  <img src="./body.png" alt="テスト画像" />
 
-    <ul>
-      <li>todo1</li>
-      <li>todo2</li>
-    </ul>
-    <ol>
-      <li>注文</li>
-      <li>開封</li>
-    </ol>
+  <a href="https://google.com">ここをクリック</a>
+  <a href="./anker.html">anker.html</a>
 
-    <!-- spanタグはインライン要素 -->
-    abc&lt;br><br />abc これを<span style="font-weight: bold">強調</span
-    >します<br />
+  <ul>
+    <li>todo1</li>
+    <li>todo2</li>
+  </ul>
+  <ol>
+    <li>注文</li>
+    <li>開封</li>
+  </ol>
 
-    <br />
-    <!-- divタグはブロック要素 -->
-    &lt;div>タグでこれを
-    <div>強調</div>
-    します
-  </body>
+  <!-- spanタグはインライン要素 -->
+  abc&lt;br><br />abc これを<span style="font-weight: bold">強調</span>します<br />
+
+  <br />
+  <!-- divタグはブロック要素 -->
+  &lt;div>タグでこれを
+  <div>強調</div>
+  します
+
+  <button type="button" onclick="func()">&lt;button>&lt;/button></button>
+  <button onclick="alertHoge()">&block;</button>
+  <input type="button" value="inputButton" onclick="alert('hello')" />
+  <div onclick="alert('文章がクリックされました。')">
+    この文章をクリックしてください
+  </div>
+
+  <script>
+    function func() {
+      window.alert(" hello, world");
+    }
+  </script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
